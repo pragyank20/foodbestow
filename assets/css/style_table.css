@@ -1,0 +1,90 @@
+body {
+	padding-top:75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .pricing-cont {
+	display:inline-flexbox;
+	padding-left: 35px;
+	align-items: center;
+	justify-content: center;
+	gap: 2.5rem;
+  }
+  .pricing-card {
+	width: 300px;
+	border: 1px solid rgb(0, 0, 0, 0.1);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	padding-bottom: 40px;
+  }
+  .pricing-card.selected {
+	border: 2px solid #5549f1;
+  }
+  
+  .pricing-card .badge {
+	width: 100px;
+	text-align: center;
+	color: #fff;
+	background-color: #5549f1;
+	padding-block: 5px;
+	font-size: 0.9em;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+  }
+  
+  .pricing-card .price {
+	font-weight: 500;
+	color: #5549f1;
+	font-size: 1.2em;
+  }
+  .pricing-card .text {
+	font-weight: 500;
+	opacity: 0.8;
+	font-size: 0.5em;
+  }
+  
+  .pricing-card ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	opacity: 0.7;
+  }
+  .pricing-card ul li {
+	padding-block: 10px;
+	border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  }
+  
+  .pricing-card button {
+	margin-top: 10px;
+	border: none;
+	background-color: rgb(0, 0, 0, 0);
+	border: 1px solid rgb(0, 0, 0, 0.1);
+	border-radius: 10px;
+	padding: 13px 30px;
+	cursor: pointer;
+	font-size: 0.9em;
+	color: #000;
+	transition: 0.3s;
+  }
+  .pricing-card button.selected {
+	background-color: #5549f1;
+	color: #fff;
+  }
+  .pricing-card button:hover {
+	border: 1px solid rgb(0, 0, 0, 0);
+	background-color: rgb(0, 0, 0, 0.1);
+  }
+  .pricing-card button.selected:hover {
+	background-color: #463bd4;
+  }
+  
+  @media only screen and (max-width: 830px) {
+	.pricing-cont {
+	  flex-direction: column;
+	}
+  }

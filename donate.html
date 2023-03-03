@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay</title>
+    <link rel="stylesheet" href="./assets/css/style_price.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style_price.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+      <!-- navbar starts -->
+<header>
+  <a href="/" class="logo"><i class="fab fa-node-js"></i> Foodbestow</a>
+
+  <div id="menu" class="fas fa-bars"></div>
+  <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index_search.html">Search NGO's</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Logout</a></li>
+        <li><a class="active" href="donate.html">Donate</a></li>
+      </ul>
+  </nav>
+</header>
+<!-- navbar ends -->
+
+
+    <div class="container">
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="card-type">Basic</div>
+          <h1 class="card-price">25 MEALS</h1>
+          <h3 class="month">/ ₹1750</h3>
+          <div class="list">
+            <div class="list-item">
+           
+            
+            </div>
+         
+          </div>
+          <button type="button" class="card-btn"><a href="pay.html">Pay Now</a></button>
+          <div class="card-bottom"><a href="index.html">Join Us</a></div>
+        </div>
+        <div class="pricing-card">
+          <div class="card-type">Standard</div>
+          <h1 class="card-price">50 MEALS</h1>
+          <h3 class="month">/ ₹3500</h3>
+          <div class="list">
+        
+          </div>
+          <button type="button" class="card-btn"><a href="pay.html">Pay Now</a></button>
+          <div class="card-bottom"><a href="index.html">Join Us</a></div>
+        </div>
+        <div class="pricing-card">
+          <div class="card-type">Premium</div>
+          <h1 class="card-price">100 MEALS</h1>
+          <h3 class="month">/ ₹7000</h3>
+          <div class="list">
+            <div class="list-item">
+            
+            </div>
+          </div>
+          <button type="button" class="card-btn"><a href="pay.html">Pay Now</a></button>
+          <div class="card-bottom"><a href="index.html">Join Us</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="box">
+        <h2> Meal Price Calculator</h2>
+    
+        <form>
+          <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" name="price" value="10" id="price">
+          </div>
+    
+          <div class="form-group">
+            <label for="quantity">Total Cost<br>
+              <span class="total-cost">1</span>
+            </label>
+            <input  style="width: 0px;height: 0px;"="range" name="quantity" value="1" id="quantity" min="1" max="100" step="1">
+          </div>
+      </form>
+          
+     
+      <div class="total-cost">
+      </div>
+    </div>
+  </div>         
+  <script src="./assets/js/script_style.json"></script>
+  </body>
+</html>
